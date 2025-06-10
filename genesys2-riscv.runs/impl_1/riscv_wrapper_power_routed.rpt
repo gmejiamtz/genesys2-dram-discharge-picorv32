@@ -1,0 +1,312 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+<<<<<<< HEAD
+| Date             : Tue May 20 16:50:13 2025
+=======
+| Date             : Mon Jun  2 17:38:43 2025
+>>>>>>> sd-card-picorv32
+| Host             : inv running 64-bit Linux Mint 21.2
+| Command          : report_power -file riscv_wrapper_power_routed.rpt -pb riscv_wrapper_power_summary_routed.pb -rpx riscv_wrapper_power_routed.rpx
+| Design           : riscv_wrapper
+| Device           : xc7k325tffg900-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+<<<<<<< HEAD
+| Total On-Chip Power (W)  | 2.318        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.137        |
+| Device Static (W)        | 0.181        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 80.9         |
+| Junction Temperature (C) | 29.1         |
+=======
+| Total On-Chip Power (W)  | 1.881        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.708        |
+| Device Static (W)        | 0.173        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 81.7         |
+| Junction Temperature (C) | 28.3         |
+>>>>>>> sd-card-picorv32
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+<<<<<<< HEAD
+| Clocks                   |     0.227 |       44 |       --- |             --- |
+| Slice Logic              |     0.191 |   155528 |       --- |             --- |
+|   LUT as Logic           |     0.170 |    75519 |    203800 |           37.06 |
+|   LUT as Distributed RAM |     0.008 |     5036 |     64000 |            7.87 |
+|   CARRY4                 |     0.006 |     3082 |     50950 |            6.05 |
+|   Register               |     0.003 |    47000 |    407600 |           11.53 |
+|   F7/F8 Muxes            |     0.002 |     4346 |    203800 |            2.13 |
+|   Others                 |     0.001 |     1632 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |      520 |     64000 |            0.81 |
+| Signals                  |     0.251 |   119144 |       --- |             --- |
+| Block RAM                |     0.077 |     55.5 |       445 |           12.47 |
+| MMCM                     |     0.323 |        3 |        10 |           30.00 |
+| PLL                      |     0.133 |        1 |        10 |           10.00 |
+| DSPs                     |     0.019 |       30 |       840 |            3.57 |
+| I/O                      |     0.458 |      101 |       500 |           20.20 |
+| PHASER                   |     0.456 |       28 |       --- |             --- |
+| XADC                     |     0.002 |        1 |       --- |             --- |
+| Static Power             |     0.181 |          |           |                 |
+| Total                    |     2.318 |          |           |                 |
+=======
+| Clocks                   |     0.123 |       41 |       --- |             --- |
+| Slice Logic              |     0.026 |    40008 |       --- |             --- |
+|   LUT as Logic           |     0.021 |    14189 |    203800 |            6.96 |
+|   LUT as Distributed RAM |     0.002 |     1788 |     64000 |            2.79 |
+|   Register               |     0.002 |    16331 |    407600 |            4.01 |
+|   CARRY4                 |     0.001 |      485 |     50950 |            0.95 |
+|   LUT as Shift Register  |    <0.001 |      657 |     64000 |            1.03 |
+|   F7/F8 Muxes            |    <0.001 |       77 |    203800 |            0.04 |
+|   Others                 |     0.000 |      786 |       --- |             --- |
+| Signals                  |     0.036 |    31112 |       --- |             --- |
+| Block RAM                |     0.005 |     18.5 |       445 |            4.16 |
+| MMCM                     |     0.322 |        3 |        10 |           30.00 |
+| PLL                      |     0.133 |        1 |        10 |           10.00 |
+| I/O                      |     0.607 |       76 |       500 |           15.20 |
+| PHASER                   |     0.456 |       28 |       --- |             --- |
+| Static Power             |     0.173 |          |           |                 |
+| Total                    |     1.881 |          |           |                 |
+>>>>>>> sd-card-picorv32
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+<<<<<<< HEAD
+| Vccint    |       1.000 |     0.984 |       0.901 |      0.083 |
+| Vccaux    |       1.800 |     0.481 |       0.452 |      0.029 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.154 |       0.153 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       2.000 |     0.091 |       0.091 |      0.000 |
+| Vccbram   |       1.000 |     0.009 |       0.006 |      0.004 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |
+=======
+| Vccint    |       1.000 |     0.411 |       0.333 |      0.078 |
+| Vccaux    |       1.800 |     0.476 |       0.447 |      0.029 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.234 |       0.233 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       2.000 |     0.110 |       0.110 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
+>>>>>>> sd-card-picorv32
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                     | Domain                                                                                                                                                                                                                   | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_out1_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clk_out1_riscv_clk_wiz_0_0                                                                                                                                                                        |            10.0 |
+| clk_out2_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clk_out2_riscv_clk_wiz_0_0                                                                                                                                                                        |             5.0 |
+<<<<<<< HEAD
+| clk_out3_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clk_out3_riscv_clk_wiz_0_0                                                                                                                                                                        |            10.0 |
+| clk_out4_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clk_out4_riscv_clk_wiz_0_0                                                                                                                                                                        |             8.0 |
+| clk_pll_i                                                                                                                                                 | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |             5.0 |
+| clk_ref_mmcm_400                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_mmcm_400                                                                                                                                    |             2.5 |
+| clkfbout_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clkfbout_riscv_clk_wiz_0_0                                                                                                                                                                        |             5.0 |
+=======
+| clk_pll_i                                                                                                                                                 | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |             5.0 |
+| clk_ref_mmcm_400                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_mmcm_400                                                                                                                                    |             2.5 |
+| clkfbout_riscv_clk_wiz_0_0                                                                                                                                | riscv_i/clk_wiz_0/inst/clkfbout_riscv_clk_wiz_0_0                                                                                                                                                                        |             5.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                                                | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                                                                                                                                                     |            33.0 |
+>>>>>>> sd-card-picorv32
+| freq_refclk                                                                                                                                               | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.3 |
+| iserdes_clkdiv                                                                                                                                            | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_1                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_2                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_3                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |             2.5 |
+<<<<<<< HEAD
+| jtag_clock                                                                                                                                                | riscv_i/RocketChip/inst/jtag/jtag_tck_inp                                                                                                                                                                                |            15.0 |
+=======
+>>>>>>> sd-card-picorv32
+| mem_refclk                                                                                                                                                | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                   |             1.2 |
+| mmcm_clkfbout                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_iodelay_ctrl/mmcm_clkfbout                                                                                                                                       |             5.0 |
+| mmcm_ps_clk_bufg_in                                                                                                                                       | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in                                                                                                                          |            10.0 |
+| oserdes_clk                                                                                                                                               | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             1.2 |
+| oserdes_clk_1                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
+| oserdes_clk_2                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             1.2 |
+| oserdes_clk_3                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             1.2 |
+| oserdes_clk_4                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             1.2 |
+| oserdes_clk_5                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
+| oserdes_clk_6                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             1.2 |
+| oserdes_clk_7                                                                                                                                             | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             1.2 |
+| oserdes_clkdiv                                                                                                                                            | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_1                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_2                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_3                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_4                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_5                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_6                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_7                                                                                                                                          | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |             5.0 |
+| pll_clk3_out                                                                                                                                              | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out                                                                                                                                 |             5.0 |
+| pll_clkfbout                                                                                                                                              | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clkfbout                                                                                                                                 |             5.0 |
+<<<<<<< HEAD
+| rgmii_rx_clk                                                                                                                                              | rgmii_rxc                                                                                                                                                                                                                |             8.0 |
+=======
+>>>>>>> sd-card-picorv32
+| sync_pulse                                                                                                                                                | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/sync_pulse                                                                                                                                   |            20.0 |
+| sys_diff_clock_clk_p                                                                                                                                      | riscv_i/util_ds_buf_0/U0/IBUF_OUT[0]                                                                                                                                                                                     |             5.0 |
+| sys_diff_clock_clk_p                                                                                                                                      | sys_diff_clock_clk_p                                                                                                                                                                                                     |             5.0 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk | riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/A_rst_primitives_reg |             1.3 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------+-----------+
+| Name                      | Power (W) |
++---------------------------+-----------+
+<<<<<<< HEAD
+| riscv_wrapper             |     2.137 |
+|   riscv_i                 |     2.135 |
+|     DDR                   |     1.386 |
+|       axi_smc_1           |     0.024 |
+|       mem_reset_control_0 |     0.002 |
+|       mig_7series_0       |     1.360 |
+|     IO                    |     0.093 |
+|       Ethernet            |     0.008 |
+|       SD                  |     0.011 |
+|       UART                |     0.001 |
+|       XADC                |     0.003 |
+|       ethernet_stream_0   |     0.029 |
+|       io_axi_m            |     0.032 |
+|       io_axi_s            |     0.009 |
+|     RocketChip            |     0.544 |
+|       inst                |     0.538 |
+|     clk_wiz_0             |     0.109 |
+|       inst                |     0.109 |
+=======
+| riscv_wrapper             |     1.708 |
+|   dbg_hub                 |     0.003 |
+|     inst                  |     0.003 |
+|       BSCANID.u_xsdbm_id  |     0.003 |
+|   riscv_i                 |     1.705 |
+|     DDR                   |     1.545 |
+|       axi_smc_1           |     0.025 |
+|       mem_reset_control_0 |     0.001 |
+|       mig_7series_0       |     1.519 |
+|     axi_gpio_0            |     0.002 |
+|       U0                  |     0.002 |
+|     axi_interconnect_0    |     0.028 |
+|       m01_couplers        |     0.007 |
+|       m02_couplers        |     0.006 |
+|       m03_couplers        |     0.006 |
+|       s00_couplers        |     0.002 |
+|       s01_couplers        |     0.003 |
+|       xbar                |     0.003 |
+|     axil_ram_0            |     0.005 |
+|       inst                |     0.005 |
+|     clk_wiz_0             |     0.108 |
+|       inst                |     0.108 |
+|     jtag_axi_0            |     0.008 |
+|       inst                |     0.008 |
+|     picorv32_axi_0        |     0.005 |
+|       inst                |     0.005 |
+|     uart_0                |     0.001 |
+|       inst                |     0.001 |
+>>>>>>> sd-card-picorv32
+|     util_ds_buf_0         |     0.004 |
+|       U0                  |     0.004 |
++---------------------------+-----------+
+
+

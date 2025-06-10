@@ -1,0 +1,33 @@
+SET_FLAG MODE BATCH
+SET_FLAG STANDALONE_MODE TRUE
+SET_PREFERENCE ipi_mode yes
+SET_PREFERENCE is_ip_locked false
+SET_PREFERENCE devicefamily kintex7
+SET_PREFERENCE device xc7k325t
+SET_PREFERENCE speedgrade -2
+SET_PREFERENCE package ffg900
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE designentry Verilog
+<<<<<<< HEAD
+SET_PREFERENCE outputdirectory /mada/users/gmejiama/Documents/vivado-risc-v/workspace/no-refresh-genesys2-riscv/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/_tmp/
+SET_PREFERENCE subworkingdirectory /mada/users/gmejiama/Documents/vivado-risc-v/workspace/no-refresh-genesys2-riscv/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/_tmp/
+=======
+SET_PREFERENCE outputdirectory /mada/users/gmejiama/Documents/genesys2_picorv32_dram_discharge/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/_tmp/
+SET_PREFERENCE subworkingdirectory /mada/users/gmejiama/Documents/genesys2_picorv32_dram_discharge/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/_tmp/
+>>>>>>> sd-card-picorv32
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE tool vivado
+SET_PREFERENCE compnamestatus 0
+SET_PARAMETER component_name riscv_mig_7series_0_0
+<<<<<<< HEAD
+SET_PARAMETER xml_input_file /mada/users/gmejiama/Documents/vivado-risc-v/workspace/no-refresh-genesys2-riscv/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/mig_a.prj
+=======
+SET_PARAMETER xml_input_file /mada/users/gmejiama/Documents/genesys2_picorv32_dram_discharge/genesys2-riscv.srcs/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/mig_a.prj
+>>>>>>> sd-card-picorv32
+SET_PARAMETER data_dir_path /mada/software/Xilinx/Vivado/2019.2/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
+SET_CORE_VERSION 4.2
+SET_CORE_VLNV xilinx.com:ip:mig_7series:4.2
+SET_CORE_PATH /mada/software/Xilinx/Vivado/2019.2/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_DATASHEET /mada/software/Xilinx/Vivado/2019.2/data/ip/xilinx/mig_7series_v4_2/data/docs/ds176_7series_MIS.pdf

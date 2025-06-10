@@ -1,0 +1,477 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+<<<<<<< HEAD
+| Date         : Tue May 20 16:49:44 2025
+=======
+| Date         : Mon Jun  2 17:38:36 2025
+>>>>>>> sd-card-picorv32
+| Host         : inv running 64-bit Linux Mint 21.2
+| Command      : report_drc -file riscv_wrapper_drc_routed.rpt -pb riscv_wrapper_drc_routed.pb -rpx riscv_wrapper_drc_routed.rpx
+| Design       : riscv_wrapper
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+<<<<<<< HEAD
+             Violations found: 63
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining       | 16         |
+| DPOP-1    | Warning  | PREG Output pipelining | 22         |
+| DPOP-2    | Warning  | MREG Output pipelining | 22         |
+| IOSR-1    | Warning  | IOB set reset sharing  | 1          |
+| REQP-1709 | Warning  | Clock output buffering | 1          |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__2 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__2 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 input riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__1 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__2 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__1 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__2 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 output riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__1 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__2 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/core/div/_prod_T_3__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__1 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__2 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/core/div/_prod_T_3__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/dfma/fma/_mulAddResult_T__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0 multiplier stage riscv_i/RocketChip/inst/rocket_system/tile_prci_domain_1/tile_reset_domain_tile/fpuOpt/sfma/fma/_mulAddResult_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO eth_mdio_data connects to flops which have these riscv_i/IO/Ethernet/inst/mdio_div[4]_i_1_n_0, riscv_i/IO/Ethernet/inst/mdio_o_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+=======
+             Violations found: 21
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| REQP-1709 | Warning  | Clock output buffering     | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check | 16         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
+| REQP-165  | Advisory | writefirst                 | 1          |
+| REQP-181  | Advisory | writefirst                 | 2          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+>>>>>>> sd-card-picorv32
+REQP-1709#1 Warning
+Clock output buffering  
+PLLE2_ADV connectivity violation. The signal riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out on the riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of riscv_i/DDR/mig_7series_0/u_riscv_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+Related violations: <none>
+
+<<<<<<< HEAD
+RTSTAT-10#1 Warning
+No routable loads  
+35 net(s) have no routable loads. The problem bus(es) and/or net(s) are riscv_i/IO/io_axi_s/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m03_nodes/m03_w_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m03_nodes/m03_r_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m03_nodes/m03_b_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m03_nodes/m03_aw_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m03_nodes/m03_ar_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe, riscv_i/IO/io_axi_s/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe (the first 15 of 35 listed).
+=======
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_0_0 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_0_0/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_0_0_ENARDEN_cooolgate_en_sig_1) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_0_1 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_0_1/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_0_1_ENARDEN_cooolgate_en_sig_2) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_0_2 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_0_2/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_0_2_ENARDEN_cooolgate_en_sig_3) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_0_3 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_0_3/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_0_3_ENARDEN_cooolgate_en_sig_4) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_1_0 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_1_0/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_1_0_ENARDEN_cooolgate_en_sig_5) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_1_1 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_1_1/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_1_1_ENARDEN_cooolgate_en_sig_6) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_1_2 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_1_2/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_1_2_ENARDEN_cooolgate_en_sig_7) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_1_3 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_1_3/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_1_3_ENARDEN_cooolgate_en_sig_8) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_2_0 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_2_0/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_2_0_ENARDEN_cooolgate_en_sig_9) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_2_1 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_2_1/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_2_1_ENARDEN_cooolgate_en_sig_10) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_2_2 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_2_2/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_2_2_ENARDEN_cooolgate_en_sig_11) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_2_3 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_2_3/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_2_3_ENARDEN_cooolgate_en_sig_12) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_3_0 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_3_0/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_3_0_ENARDEN_cooolgate_en_sig_13) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_3_1 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_3_1/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_3_1_ENARDEN_cooolgate_en_sig_14) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_3_2 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_3_2/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_3_2_ENARDEN_cooolgate_en_sig_15) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 riscv_i/axil_ram_0/inst/mem_reg_3_3 has an input control pin riscv_i/axil_ram_0/inst/mem_reg_3_3/ENARDEN (net: riscv_i/axil_ram_0/inst/mem_reg_3_3_ENARDEN_cooolgate_en_sig_16) which is driven by a register (riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+141 net(s) have no routable loads. The problem bus(es) and/or net(s) are riscv_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, riscv_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0] (the first 15 of 103 listed).
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (riscv_i/jtag_axi_0/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+>>>>>>> sd-card-picorv32
+Related violations: <none>
+
+

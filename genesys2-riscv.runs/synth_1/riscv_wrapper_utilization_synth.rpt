@@ -1,0 +1,386 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+<<<<<<< HEAD
+| Date         : Tue May 20 16:42:24 2025
+=======
+| Date         : Mon Jun  2 17:35:05 2025
+>>>>>>> sd-card-picorv32
+| Host         : inv running 64-bit Linux Mint 21.2
+| Command      : report_utilization -file riscv_wrapper_utilization_synth.rpt -pb riscv_wrapper_utilization_synth.pb
+| Design       : riscv_wrapper
+| Device       : 7k325tffg900-2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+<<<<<<< HEAD
+| Slice LUTs*                | 84591 |     0 |    203800 | 41.51 |
+|   LUT as Logic             | 78077 |     0 |    203800 | 38.31 |
+|   LUT as Memory            |  6514 |     0 |     64000 | 10.18 |
+|     LUT as Distributed RAM |  5916 |     0 |           |       |
+|     LUT as Shift Register  |   598 |     0 |           |       |
+| Slice Registers            | 49930 |     0 |    407600 | 12.25 |
+|   Register as Flip Flop    | 49930 |     0 |    407600 | 12.25 |
+|   Register as Latch        |     0 |     0 |    407600 |  0.00 |
+| F7 Muxes                   |  3571 |     0 |    101900 |  3.50 |
+| F8 Muxes                   |   775 |     0 |     50950 |  1.52 |
+=======
+| Slice LUTs*                | 17743 |     0 |    203800 |  8.71 |
+|   LUT as Logic             | 15016 |     0 |    203800 |  7.37 |
+|   LUT as Memory            |  2727 |     0 |     64000 |  4.26 |
+|     LUT as Distributed RAM |  1952 |     0 |           |       |
+|     LUT as Shift Register  |   775 |     0 |           |       |
+| Slice Registers            | 16969 |     0 |    407600 |  4.16 |
+|   Register as Flip Flop    | 16969 |     0 |    407600 |  4.16 |
+|   Register as Latch        |     0 |     0 |    407600 |  0.00 |
+| F7 Muxes                   |    71 |     0 |    101900 |  0.07 |
+| F8 Muxes                   |     6 |     0 |     50950 |  0.01 |
+>>>>>>> sd-card-picorv32
++----------------------------+-------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+<<<<<<< HEAD
+| 107   |          Yes |           - |          Set |
+| 220   |          Yes |           - |        Reset |
+| 1014  |          Yes |         Set |            - |
+| 48589 |          Yes |       Reset |            - |
+=======
+| 195   |          Yes |           - |          Set |
+| 210   |          Yes |           - |        Reset |
+| 513   |          Yes |         Set |            - |
+| 16051 |          Yes |       Reset |            - |
+>>>>>>> sd-card-picorv32
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+<<<<<<< HEAD
+| Block RAM Tile    | 55.5 |     0 |       445 | 12.47 |
+|   RAMB36/FIFO*    |    7 |     0 |       445 |  1.57 |
+|     RAMB36E1 only |    7 |       |           |       |
+|   RAMB18          |   97 |     0 |       890 | 10.90 |
+|     RAMB18E1 only |   97 |       |           |       |
+=======
+| Block RAM Tile    | 18.5 |     0 |       445 |  4.16 |
+|   RAMB36/FIFO*    |   18 |     0 |       445 |  4.04 |
+|     RAMB36E1 only |   18 |       |           |       |
+|   RAMB18          |    1 |     0 |       890 |  0.11 |
+|     RAMB18E1 only |    1 |       |           |       |
+>>>>>>> sd-card-picorv32
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
+<<<<<<< HEAD
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   30 |     0 |       840 |  3.57 |
+|   DSP48E1 only |   30 |       |           |       |
++----------------+------+-------+-----------+-------+
+=======
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       840 |  0.00 |
++-----------+------+-------+-----------+-------+
+>>>>>>> sd-card-picorv32
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+<<<<<<< HEAD
+| Bonded IOB                  |  101 |     0 |       500 | 20.20 |
+=======
+| Bonded IOB                  |   76 |     0 |       500 | 15.20 |
+>>>>>>> sd-card-picorv32
+| Bonded IPADs                |    0 |     0 |        50 |  0.00 |
+| Bonded OPADs                |    0 |     0 |        32 |  0.00 |
+| PHY_CONTROL                 |    2 |     0 |        10 | 20.00 |
+| PHASER_REF                  |    2 |     0 |        10 | 20.00 |
+| OUT_FIFO                    |    8 |     0 |        40 | 20.00 |
+| IN_FIFO                     |    4 |     0 |        40 | 10.00 |
+<<<<<<< HEAD
+| IDELAYCTRL                  |    3 |     0 |        10 | 30.00 |
+=======
+| IDELAYCTRL                  |    2 |     0 |        10 | 20.00 |
+>>>>>>> sd-card-picorv32
+| IBUFDS                      |    1 |     0 |       480 |  0.21 |
+| GTXE2_COMMON                |    0 |     0 |         4 |  0.00 |
+| GTXE2_CHANNEL               |    0 |     0 |        16 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    8 |     0 |        40 | 20.00 |
+|   PHASER_OUT_PHY only       |    8 |     0 |           |       |
+| PHASER_IN/PHASER_IN_PHY     |    4 |     0 |        40 | 10.00 |
+|   PHASER_IN_PHY only        |    4 |     0 |           |       |
+<<<<<<< HEAD
+| IDELAYE2/IDELAYE2_FINEDELAY |   38 |     0 |       500 |  7.60 |
+|   IDELAYE2 only             |    6 |     0 |           |       |
+|   IDELAYE2_FINEDELAY only   |   32 |     0 |           |       |
+| ODELAYE2/ODELAYE2_FINEDELAY |    1 |     0 |       150 |  0.67 |
+|   ODELAYE2 only             |    1 |     0 |           |       |
+| IBUFDS_GTE2                 |    0 |     0 |         8 |  0.00 |
+| ILOGIC                      |   41 |     0 |       500 |  8.20 |
+|   ISERDES                   |   32 |       |           |       |
+|   IDDR                      |    9 |       |           |       |
+| OLOGIC                      |   79 |     0 |       500 | 15.80 |
+|   OSERDES                   |   64 |       |           |       |
+|   ODDR                      |   15 |       |           |       |
+=======
+| IDELAYE2/IDELAYE2_FINEDELAY |   32 |     0 |       500 |  6.40 |
+|   IDELAYE2_FINEDELAY only   |   32 |     0 |           |       |
+| ODELAYE2/ODELAYE2_FINEDELAY |    0 |     0 |       150 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         8 |  0.00 |
+| ILOGIC                      |   36 |     0 |       500 |  7.20 |
+|   ISERDES                   |   32 |       |           |       |
+|   IDDR                      |    4 |       |           |       |
+| OLOGIC                      |   73 |     0 |       500 | 14.60 |
+|   OSERDES                   |   64 |       |           |       |
+|   ODDR                      |    9 |       |           |       |
+>>>>>>> sd-card-picorv32
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
+<<<<<<< HEAD
++--------------+------+-------+-----------+-------+
+|   Site Type  | Used | Fixed | Available | Util% |
++--------------+------+-------+-----------+-------+
+| BUFGCTRL     |    9 |     0 |        32 | 28.13 |
+| BUFIO        |    1 |     0 |        40 |  2.50 |
+|   BUFIO only |    1 |     0 |           |       |
+| MMCME2_ADV   |    3 |     0 |        10 | 30.00 |
+| PLLE2_ADV    |    1 |     0 |        10 | 10.00 |
+| BUFMRCE      |    0 |     0 |        20 |  0.00 |
+| BUFHCE       |    1 |     0 |       168 |  0.60 |
+| BUFR         |    1 |     0 |        40 |  2.50 |
++--------------+------+-------+-----------+-------+
+=======
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    8 |     0 |        32 | 25.00 |
+| BUFIO      |    0 |     0 |        40 |  0.00 |
+| MMCME2_ADV |    3 |     0 |        10 | 30.00 |
+| PLLE2_ADV  |    1 |     0 |        10 | 10.00 |
+| BUFMRCE    |    0 |     0 |        20 |  0.00 |
+| BUFHCE     |    1 |     0 |       168 |  0.60 |
+| BUFR       |    0 |     0 |        40 |  0.00 |
++------------+------+-------+-----------+-------+
+>>>>>>> sd-card-picorv32
+
+
+6. Specific Feature
+-------------------
+
+<<<<<<< HEAD
++-------------+------+-------+-----------+--------+
+|  Site Type  | Used | Fixed | Available |  Util% |
++-------------+------+-------+-----------+--------+
+| BSCANE2     |    1 |     0 |         4 |  25.00 |
+| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
+| DNA_PORT    |    0 |     0 |         1 |   0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
+| ICAPE2      |    0 |     0 |         2 |   0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |   0.00 |
+| STARTUPE2   |    0 |     0 |         1 |   0.00 |
+| XADC        |    1 |     0 |         1 | 100.00 |
++-------------+------+-------+-----------+--------+
+=======
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+>>>>>>> sd-card-picorv32
+
+
+7. Primitives
+-------------
+
++------------------------+-------+---------------------+
+|        Ref Name        |  Used | Functional Category |
++------------------------+-------+---------------------+
+<<<<<<< HEAD
+| FDRE                   | 48589 |        Flop & Latch |
+| LUT6                   | 39959 |                 LUT |
+| LUT5                   | 16655 |                 LUT |
+| LUT4                   | 12981 |                 LUT |
+| LUT3                   | 11674 |                 LUT |
+| RAMD32                 |  8566 |  Distributed Memory |
+| LUT2                   |  7460 |                 LUT |
+| MUXF7                  |  3571 |               MuxFx |
+| CARRY4                 |  3084 |          CarryLogic |
+| RAMS32                 |  2770 |  Distributed Memory |
+| LUT1                   |  1472 |                 LUT |
+| FDSE                   |  1014 |        Flop & Latch |
+| MUXF8                  |   775 |               MuxFx |
+| SRLC32E                |   400 |  Distributed Memory |
+| FDCE                   |   220 |        Flop & Latch |
+| SRL16E                 |   198 |  Distributed Memory |
+| RAMD64E                |   120 |  Distributed Memory |
+| FDPE                   |   107 |        Flop & Latch |
+| RAMB18E1               |    97 |        Block Memory |
+| OSERDESE2              |    64 |                  IO |
+| OBUF                   |    37 |                  IO |
+=======
+| FDRE                   | 16051 |        Flop & Latch |
+| LUT6                   |  5579 |                 LUT |
+| LUT5                   |  3981 |                 LUT |
+| LUT3                   |  3719 |                 LUT |
+| LUT4                   |  2676 |                 LUT |
+| RAMD32                 |  2664 |  Distributed Memory |
+| LUT2                   |  1874 |                 LUT |
+| RAMS32                 |   888 |  Distributed Memory |
+| LUT1                   |   691 |                 LUT |
+| SRLC32E                |   619 |  Distributed Memory |
+| FDSE                   |   513 |        Flop & Latch |
+| CARRY4                 |   483 |          CarryLogic |
+| FDCE                   |   210 |        Flop & Latch |
+| FDPE                   |   195 |        Flop & Latch |
+| RAMD64E                |   176 |  Distributed Memory |
+| SRL16E                 |   156 |  Distributed Memory |
+| MUXF7                  |    71 |               MuxFx |
+| OSERDESE2              |    64 |                  IO |
+>>>>>>> sd-card-picorv32
+| OBUFT_DCIEN            |    32 |                  IO |
+| ISERDESE2              |    32 |                  IO |
+| IDELAYE2_FINEDELAY     |    32 |                  IO |
+| IBUF_IBUFDISABLE       |    32 |                  IO |
+<<<<<<< HEAD
+| DSP48E1                |    30 |    Block Arithmetic |
+| IBUF                   |    16 |                  IO |
+| ODDR                   |    15 |                  IO |
+| OBUFT                  |    10 |                  IO |
+| IDDR                   |     9 |                  IO |
+| BUFG                   |     9 |               Clock |
+=======
+| OBUF                   |    27 |                  IO |
+| RAMB36E1               |    18 |        Block Memory |
+| ODDR                   |     9 |                  IO |
+>>>>>>> sd-card-picorv32
+| PHASER_OUT_PHY         |     8 |                  IO |
+| OUT_FIFO               |     8 |                  IO |
+| OBUFTDS_DCIEN          |     8 |                  IO |
+| IBUFDS_IBUFDISABLE_INT |     8 |                  IO |
+<<<<<<< HEAD
+| RAMB36E1               |     7 |        Block Memory |
+| IDELAYE2               |     6 |                  IO |
+| INV                    |     5 |                 LUT |
+| PHASER_IN_PHY          |     4 |                  IO |
+| IN_FIFO                |     4 |                  IO |
+| MMCME2_ADV             |     3 |               Clock |
+| IDELAYCTRL             |     3 |                  IO |
+| PHY_CONTROL            |     2 |                  IO |
+| PHASER_REF             |     2 |                  IO |
+| OBUFDS                 |     2 |                  IO |
+| XADC                   |     1 |              Others |
+| PLLE2_ADV              |     1 |               Clock |
+| ODELAYE2               |     1 |                  IO |
+| IBUFDS                 |     1 |                  IO |
+| BUFR                   |     1 |               Clock |
+| BUFIO                  |     1 |               Clock |
+| BUFH                   |     1 |               Clock |
+| BSCANE2                |     1 |              Others |
+=======
+| BUFG                   |     8 |               Clock |
+| MUXF8                  |     6 |               MuxFx |
+| INV                    |     5 |                 LUT |
+| PHASER_IN_PHY          |     4 |                  IO |
+| OBUFT                  |     4 |                  IO |
+| IN_FIFO                |     4 |                  IO |
+| IDDR                   |     4 |                  IO |
+| MMCME2_ADV             |     3 |               Clock |
+| PHY_CONTROL            |     2 |                  IO |
+| PHASER_REF             |     2 |                  IO |
+| OBUFDS                 |     2 |                  IO |
+| IDELAYCTRL             |     2 |                  IO |
+| RAMB18E1               |     1 |        Block Memory |
+| PLLE2_ADV              |     1 |               Clock |
+| IBUFDS                 |     1 |                  IO |
+| IBUF                   |     1 |                  IO |
+| BUFH                   |     1 |               Clock |
+>>>>>>> sd-card-picorv32
++------------------------+-------+---------------------+
+
+
+8. Black Boxes
+--------------
+
+<<<<<<< HEAD
++----------+------+
+| Ref Name | Used |
++----------+------+
+=======
++------------+------+
+|  Ref Name  | Used |
++------------+------+
+| dbg_hub_CV |    1 |
++------------+------+
+>>>>>>> sd-card-picorv32
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+

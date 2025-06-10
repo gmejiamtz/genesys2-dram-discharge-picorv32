@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+<<<<<<< HEAD
+    <Process Command="vivado" Owner="gmejiama" Host="" Pid="2855747" HostCore="20" HostMemory="65604840">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="gmejiama" Host="" Pid="2921803" HostCore="20" HostMemory="65604840">
+=======
+    <Process Command="vivado" Owner="gmejiama" Host="" Pid="368621" HostCore="20" HostMemory="65604840">
+>>>>>>> sd-card-picorv32
+    </Process>
+</ProcessHandle>

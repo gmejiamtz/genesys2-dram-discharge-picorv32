@@ -1,0 +1,21 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+<<<<<<< HEAD
+   # of logical nets.......................... :      182428 :
+       # of nets not needing routing.......... :       63224 :
+           # of internally routed nets........ :       59816 :
+           # of nets with no loads............ :        3408 :
+       # of routable nets..................... :      119204 :
+           # of fully routed nets............. :      119204 :
+=======
+   # of logical nets.......................... :       49894 :
+       # of nets not needing routing.......... :       18730 :
+           # of internally routed nets........ :       17580 :
+           # of nets with no loads............ :        1150 :
+       # of routable nets..................... :       31164 :
+           # of fully routed nets............. :       31164 :
+>>>>>>> sd-card-picorv32
+       # of nets with routing errors.......... :           0 :
+   ------------------------------------------- : ----------- :
+
